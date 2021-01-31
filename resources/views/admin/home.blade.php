@@ -24,7 +24,7 @@
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{$produtos_ativos}}</div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                <i class="fas fa-shopping-cart fa-2x text-gray-300"></i>
                             </div>
                         </div>
                     </div>
@@ -38,12 +38,12 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                    Produtos
+                                    Produtos Totais
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{$produtos}}</div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                <i class="fas fa-shopping-cart fa-2x text-gray-300"></i>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                                 </div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                <i class="fas fa-book fa-2x text-gray-300"></i>
                             </div>
                         </div>
                     </div>
@@ -80,12 +80,12 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                    Cursos
+                                    Cursos Totais
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{$cursos}}</div>
                             </div>
                             <div class="col-auto">
-                                <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                <i class="fas fa-book fa-2x text-gray-300"></i>
                             </div>
                         </div>
                     </div>

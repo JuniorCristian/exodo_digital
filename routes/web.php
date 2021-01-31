@@ -32,7 +32,7 @@ Route::get('/', function () {
     return view('site.index', compact('produtos', 'cursos', 'info_pages'));
 })->name('home');
 
-Route::get('envia-contato', function (Request $request){
+Route::post('envia-contato', function (Request $request) {
     $mail = new stdClass();
     $mail->nome = $request->nome;
     $mail->email = $request->email;
@@ -42,8 +42,9 @@ Route::get('envia-contato', function (Request $request){
     $mail->email = 'juniorgamer2209@gmail.com';
     $mail->assunto = 'Teste';
     $mail->mensagem = 'Aaaaaaaaaaa';
-    return new \App\Mail\contatoSite($mail);
-    //Mail::send(new \App\Mail\contatoSite($mail));
+    //return new \App\Mail\contatoSite($mail);
+    Mail::send(new \App\Mail\contatoSite($mail));
+    return json_encode(['status'=>true]);
 })->name('contatoMail');
 
 Auth::routes();
@@ -72,7 +73,8 @@ Route::group([
             Route::post('/store', [ProdutosController::class, 'store'])->name('admin.produtos.store');
             Route::get('/{produtos}/editar', [ProdutosController::class, 'edit'])->name('admin.produtos.edit');
             Route::put('/{produtos}/update', [ProdutosController::class, 'update'])->name('admin.produtos.update');
-            Route::delete('/{produtos}/destroy', [ProdutosController::class, 'destroy'])->name('admin.produtos.destroy');
+            Route::delete('/{produtos}/destroy',
+                [ProdutosController::class, 'destroy'])->name('admin.produtos.destroy');
         });
     });
 });

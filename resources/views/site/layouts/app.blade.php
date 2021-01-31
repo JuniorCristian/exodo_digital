@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="{{asset('css/plugins/sweetalert2.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/plugins/animate.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/plugins/owl.carousel.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/plugins/lightbox.min.css')}}" rel="stylesheet">
@@ -25,6 +26,7 @@
 <script src="{{asset('js/plugins/easing.min.js')}}"></script>
 <script src="{{asset('js/plugins/typed.min.js')}}"></script>
 <script src="{{asset('js/plugins/wow.min.js')}}"></script>
+<script src="{{asset('js/plugins/sweetalert2.min.js')}}"></script>
 <script src="{{url(mix('js/script.min.js'))}}"></script>
 @stack('scripts')
 </body>

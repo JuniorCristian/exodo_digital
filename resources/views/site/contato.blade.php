@@ -56,7 +56,13 @@
                     mensagem: $('#message').val(),
                 },
                 success: function (){
-
+                    Swal.fire({
+                        title: 'Sucesso',
+                        text: "E-mail enviado com sucesso, aguarde que entraremos em contatos com você assim que possivel!",
+                        icon: 'success',
+                        confirmButtonText: 'OK',
+                        confirmButtonColor: '#8A142D'
+                    });
                 }
             });
         });

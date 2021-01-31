@@ -136,23 +136,23 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/resources/views/admin/cursos" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/resources/js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/js/plugins" />
       <recent name="$PROJECT_DIR$/public/css/plugins" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/resources/views/admin/produtos" />
       <recent name="$PROJECT_DIR$/resources/views/site" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources" />
-      <recent name="$PROJECT_DIR$/resources/views/admin/cursos" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/resources/js" />
-      <recent name="$PROJECT_DIR$/resources/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -181,7 +181,7 @@
       <workItem from="1611947317285" duration="17656000" />
       <workItem from="1612023885876" duration="10413000" />
       <workItem from="1612037548509" duration="11584000" />
-      <workItem from="1612097553557" duration="14075000" />
+      <workItem from="1612097553557" duration="15659000" />
     </task>
     <servers />
   </component>
@@ -257,9 +257,9 @@
       <screen x="0" y="27" width="1360" height="741" />
     </state>
     <state x="344" y="165" key="run.anything.popup/0.27.1360.741/1360.0.1280.1024@0.27.1360.741" timestamp="1611954345205" />
-    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1612123891080">
+    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1612127802981">
       <screen x="0" y="27" width="1360" height="741" />
     </state>
-    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1360.741/1360.0.1280.1024@0.27.1360.741" timestamp="1612123891080" />
+    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1360.741/1360.0.1280.1024@0.27.1360.741" timestamp="1612127802981" />
   </component>
 </project>
