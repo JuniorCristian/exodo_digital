@@ -18,7 +18,7 @@
                         <tr>
                             <th>Título</th>
                             <th>Descrição</th>
-                            <th>Staus</th>
+                            <th>Status</th>
                             <th width="100px">Ações</th>
                         </tr>
                         </thead>

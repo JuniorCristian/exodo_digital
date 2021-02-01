@@ -1,6 +1,6 @@
 {
     "/css/plugins/fontawesome.min.css": "/css/plugins/fontawesome.min.css?id=a32e49cf3f85812ad07a",
-    "/css/sb-admin-2.min.css": "/css/sb-admin-2.min.css?id=5ac777f603508a94862d",
+    "/css/sb-admin-2.min.css": "/css/sb-admin-2.min.css?id=9af0fc7e5a6f1f4a2383",
     "/js/plugins/bootstrap.bundle.js": "/js/plugins/bootstrap.bundle.js?id=836835c954fa1283987f",
     "/js/plugins/jquery.min.js": "/js/plugins/jquery.min.js?id=23c7c5d2d1317508e807",
     "/js/plugins/jquery.mask.min.js": "/js/plugins/jquery.mask.min.js?id=a1fb4aaee1dcbfd24e6e",
@@ -13,13 +13,14 @@
     "/js/plugins/sweetalert2.min.js": "/js/plugins/sweetalert2.min.js?id=31f57d3625062eecbb4e",
     "/css/plugins/sweetalert2.min.css": "/css/plugins/sweetalert2.min.css?id=02ce91ab3daf2beda089",
     "/js/plugins/datatables.min.js": "/js/plugins/datatables.min.js?id=8b9ede601eb51874e39e",
+    "/js/plugins/datatables.responsive.min.js": "/js/plugins/datatables.responsive.min.js?id=13da4d8e7c1d2bdf6e3a",
     "/css/plugin/lightbox.min.css": "/css/plugin/lightbox.min.css?id=06fd76c56815398d4e8a",
     "/js/script.min.js": "/js/script.min.js?id=9f7d1eced1656b9cfb00",
     "/css/style.min.css": "/css/style.min.css?id=d22d37868f673e7361eb",
-    "/js/plugin/easing.min.js": "/js/plugin/easing.min.js?id=ec0a5208d6fa3bb72fe7",
-    "/js/plugin/wow.min.js": "/js/plugin/wow.min.js?id=6d1de87eaba3bea986f9",
-    "/js/plugin/typed.min.js": "/js/plugin/typed.min.js?id=e3b35ea731fb5af824ec",
-    "/js/plugin/owl.carousel.min.js": "/js/plugin/owl.carousel.min.js?id=ccdf893e7d8b26933af0",
-    "/css/plugin/owl.carousel.min.css": "/css/plugin/owl.carousel.min.css?id=c8322bd5bffc8e2856f2",
-    "/css/plugin/animate.min.css": "/css/plugin/animate.min.css?id=cf2741a3a7ea8427ade6"
+    "/js/plugins/easing.min.js": "/js/plugins/easing.min.js?id=ec0a5208d6fa3bb72fe7",
+    "/js/plugins/wow.min.js": "/js/plugins/wow.min.js?id=6d1de87eaba3bea986f9",
+    "/js/plugins/typed.min.js": "/js/plugins/typed.min.js?id=e3b35ea731fb5af824ec",
+    "/js/plugins/owl.carousel.min.js": "/js/plugins/owl.carousel.min.js?id=ccdf893e7d8b26933af0",
+    "/css/plugins/owl.carousel.min.css": "/css/plugins/owl.carousel.min.css?id=c8322bd5bffc8e2856f2",
+    "/css/plugins/animate.min.css": "/css/plugins/animate.min.css?id=cf2741a3a7ea8427ade6"
 }

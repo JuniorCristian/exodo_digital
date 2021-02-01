@@ -8,8 +8,9 @@ use Illuminate\Http\Request;
 class InfoPageController extends Controller
 {
 
-    public function update(Request $request, Info_Page $info_Page)
+    public function update(Request $request)
     {
+        $info_Page = Info_Page::get()->first();
         $info_Page->phone = $request->phone;
         $info_Page->email = $request->email;
         $info_Page->street = $request->street;

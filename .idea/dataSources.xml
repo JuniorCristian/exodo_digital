@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/cursos</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="misaelse_exodo_digital@misaelserafim.com.br" uuid="2606085e-da2b-4f50-b7c0-ced06ed2c113">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://misaelserafim.com.br:3306/misaelse_exodo_digital</jdbc-url>
+    </data-source>
   </component>
 </project>
