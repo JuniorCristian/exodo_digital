@@ -11,22 +11,22 @@
                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
                             <div class="control-group">
                                 <p>Seu nome</p>
-                                <input type="text" class="form-control" id="name" required="required" data-validation-required-message="Por favor, coloque seu nome" />
+                                <input type="text" class="form-control" id="name" required/>
                                 <p class="help-block"></p>
                             </div>
                             <div class="control-group">
                                 <p>E-mail</p>
-                                <input type="email" class="form-control" id="email"  required="required" data-validation-required-message="Precisa do e-mail" />
+                                <input type="email" class="form-control" id="email"  required/>
                                 <p class="help-block"></p>
                             </div>
                             <div class="control-group">
                                 <p>Assunto</p>
-                                <input type="text" class="form-control" id="subject"  required="required" data-validation-required-message="Coloque algum assunto" />
+                                <input type="text" class="form-control" id="subject"  required />
                                 <p class="help-block"></p>
                             </div>
                             <div class="control-group">
                                 <p>Sua mensagem</p>
-                                <textarea class="form-control" id="message"  required="required" data-validation-required-message="Insira uma mensagem"></textarea>
+                                <textarea class="form-control" id="message"  required></textarea>
                                 <p class="help-block"></p>
                             </div>
                             <div>

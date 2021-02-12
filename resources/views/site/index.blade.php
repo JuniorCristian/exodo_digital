@@ -29,8 +29,8 @@
                     <div class="hero-content">
                         <div class="hero-text">
                             <p>ÊXODO DIGTAL</p>
-                            <h1>A Solução Digital para</h1>
-                            <div class="typed-text">O seu negócio, Trasformar seu conhecimento</div>
+                            <h1>Somos uma agência especializada em</h1>
+                            <h3 class="text-white">Gestão de tráfego e desenvolvimento organizacional.</h3>
                         </div>
                         <div class="hero-btn">
                             <a href="#loja" class="btn">Conheça nossa loja</a>

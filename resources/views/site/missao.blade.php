@@ -10,11 +10,9 @@
                 </div>
                 <div class="service-text">
                     <p>
-                        Ajudar pessoas comuns a ganharem dinheiro com o que sabem fazer.
-                        Transformar o conhecimento das pessoas em um produto digital rentável, monetiza-lo e gerar
-                        transformações na vida das pessoas que o tiverem acesso é a nossa grande ambição.
-                         Somos movidos pelo seu desejo de melhorar a performance e os resultados de vendas
-                        da sua empresa no digital.
+                    É ajudar empresas e pessoas comuns atingirem níveis extraordinários de crescimento. 
+                    </p>
+                    <p>Nosso objetivo: Atrair mais clientes para a sua empresa com anúncios inteligentes.
                     </p>
                 </div>
             </div>
