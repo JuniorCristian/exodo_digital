@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>{{env('APP_NAME')}}</title>
-    <link href="favicon.ico" rel="icon">
+    <link href="{{env('APP_URL')}}/storage/img/logo.png" rel="icon">
+    
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
