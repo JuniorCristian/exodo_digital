@@ -32,6 +32,23 @@
                                 </div>
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
+                                        <labe for="link">Link externo</labe>
+                                        <input class="form-control form-text" value="{{@$cursos->link}}" id="link"
+                                               name="link"
+                                               placeholder="Insira o link do curso">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="form-group">
+                                        <labe for="description">Descrição</labe>
+                                        <textarea name="description" class="form-control form-text" id="description" rows="10" placeholder="Insira a descrição do curso" required>{{@$cursos->description}}</textarea>
+                                    </div>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor preencha a descrição
+                                </div>
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-group">
                                         <labe for="status">Status</labe>
                                         <select class="form-control form-text" id="status" required name="status">
                                             <option {{!isset($cursos->status)?"selected":(@($cursos->status)?'selected ':'')}} value="1">Ativo
@@ -43,12 +60,25 @@
                                 </div>
                                 <div class="col-md-12 col-lg-12">
                                     <div class="form-group">
-                                        <labe for="description">Descrição</labe>
-                                        <textarea name="description" class="form-control form-text" id="description" rows="10" placeholder="Insira a descrição do curso" required>{{@$cursos->description}}</textarea>
+                                        <label for="image">Escolha a foto do curso</label>
+                                        <input type="hidden" name="x" id="x">
+                                        <input type="hidden" name="y" id="y">
+                                        <input type="hidden" name="width" id="width">
+                                        <input type="hidden" name="height" id="height">
+                                        <input type="file" class="form-control-file" {{isset($cursos->image)?'':'required '}}name="imagem" id="image">
                                     </div>
                                 </div>
                                 <div class="invalid-feedback">
-                                    Por favor preencha a descrição
+                                    Por favor selecione uma imagem
+                                </div>
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-group" id="photoDiv">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-12" style="margin-bottom: 15px">
+                                    @if(isset($cursos->image))
+                                        <img class="imageCrop img-fluid" width="146px" src="{{env('APP_URL')}}/storage/{{@$cursos->image}}" alt="">
+                                    @endif
                                 </div>
                                 <div class="col-md-12 col-lg-12">
                                     <div class="form-group">
@@ -86,6 +116,25 @@
                                 form.classList.add('was-validated')
                             }, false)
                         });
+                });
+                $("#image").change(function () {
+                    const file = $(this)[0].files[0];
+                    const fileReader = new FileReader();
+                    fileReader.onloadend = function () {
+                        $('#photoDiv').html("<img width='100%' src='" + fileReader.result + "' id='photo'>");
+                        const image = $('#photo');
+
+                        image.cropper({
+                            crop: function (event) {
+                                $('#x').val(event.detail.x);
+                                $('#y').val(event.detail.y);
+                                $('#width').val(event.detail.width);
+                                $('#height').val(event.detail.height);
+                            },
+                            zoomable:false
+                        });
+                    }
+                    fileReader.readAsDataURL(file);
                 });
             });
 

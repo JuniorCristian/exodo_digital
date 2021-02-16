@@ -97,10 +97,16 @@ class CursosController extends Controller
 
     public function store(Request $request)
     {
+        $filename = 'img_' . $this->urlAmigavel($request->title) . '.' . $request->file('imagem')->extension();
+        $path = public_path('storage/cursos/' . $filename);
+        Image::make($request->file('imagem'))->crop(intval($request->width), intval($request->height),
+            intval($request->x), intval($request->y))->resize('310', (310*intval($request->height))/intval($request->width))->save($path);
         $curso = new Cursos();
         $curso->title = $request->title;
         $curso->description = $request->description;
         $curso->status = $request->status;
+        $curso->link = $request->link;
+        $curso->image = $path;
         $curso->status_db = 1;
         $curso->save();
         return redirect()->route('admin.cursos.index');
@@ -118,9 +124,17 @@ class CursosController extends Controller
 
     public function update(Request $request, Cursos $cursos)
     {
+        if ($request->file('imagem') !== null) {
+            $filename = 'img_' . $this->urlAmigavel($request->title) . '.' . $request->file('imagem')->extension();
+            $path = public_path('storage/cursos/' . $filename);
+            Image::make($request->file('imagem'))->crop(intval($request->width), intval($request->height),
+                intval($request->x), intval($request->y))->resize('310', (310 * intval($request->height)) / intval($request->width))->save($path);
+            $cursos->image = 'cursos/'.$filename;
+        }
         $cursos->title = $request->title;
         $cursos->description = $request->description;
         $cursos->status = $request->status;
+        $cursos->link = $request->link;
 
         $cursos->save();
         return redirect()->route('admin.cursos.index');

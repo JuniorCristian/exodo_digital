@@ -3,7 +3,7 @@
 @section('content')
     <div class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
-            <a href="{{route('home')}}" class="navbar-brand"><img src="{{env('APP_URL')}}/storage/img/logo.png" with="270"></a>
+            <a href="{{route('home')}}" class="navbar-brand"><img src="{{asset('/img/logo.png')}}" with="270"></a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>

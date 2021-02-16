@@ -19,8 +19,7 @@
                             <th>Título</th>
                             <th>Preço</th>
                             <th>Imagem</th>
-                            <th>Statm dia
-                                us</th>
+                            <th>Status</th>
                             <th width="100px">Ações</th>
                         </tr>
                         </thead>

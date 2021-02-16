@@ -8,12 +8,12 @@
                 <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="price-item">
                         <div class="price-header">
-                            <img src="{{env('APP_URL')}}/storage/{{$produto->image}}" alt="" class="img-produto">
+                            <img src="{{asset('/storage/'.$produto->image)}}" alt="" class="img-produto">
                             <div class="price-title">
                                 <h2>{{$produto->title}}</h2>
                             </div>
                             <div class="price-prices">
-                                <h2><small>R$</small>{{number_format($produto->price, '2', ',', '.')}}</h2>
+                                <h2><small>{{$produto->current}}</small>{{number_format($produto->price, '2', ',', '.')}}</h2>
                             </div>
                         </div>
                         <div class="price-body">

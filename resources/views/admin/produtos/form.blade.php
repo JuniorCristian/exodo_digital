@@ -35,7 +35,7 @@
                                         <labe for="link">Link externo</labe>
                                         <input class="form-control form-text" value="{{@$cursos->link}}" id="link"
                                                name="link"
-                                               placeholder="Insira o link do curso">
+                                               placeholder="Insira o link do produto">
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-12">
@@ -55,9 +55,20 @@
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
                                         <labe for="price">Preço</labe>
-                                        <input class="form-control form-text price" value="{{@$cursos->price}}" required
-                                               id="price" name="price"
-                                               placeholder="Insira o preço do curso">
+                                        <div class="col-md-12 d-flex">
+                                            <div class="col-md-3">
+                                                <select name="current" id="current" class="form-control form-text">
+                                                    <option {{(@$cursos->current=="R$"||(!isset($cursos->current)||$cursos->current=='')?"selected":"")}} value="R$">BRL</option>
+                                                    <option {{(@$cursos->current=="US$"?"selected":"")}} value="US$">USD</option>
+                                                    <option {{(@$cursos->current=="Kz"?"selected":"")}} value="Kz">AOA</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input class="form-control form-text price" value="{{@$cursos->price}}" required
+                                                       id="price" name="price"
+                                                       placeholder="Insira o preço do produto">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="invalid-feedback">
@@ -138,17 +149,17 @@
                     const file = $(this)[0].files[0];
                     const fileReader = new FileReader();
                     fileReader.onloadend = function () {
-                        $('#photoDiv').html("<img width='146px' src='" + fileReader.result + "' id='photo'>");
+                        $('#photoDiv').html("<img width='100%' src='" + fileReader.result + "' id='photo'>");
                         const image = $('#photo');
 
                         image.cropper({
-                            aspectRatio: 146 / 226,
                             crop: function (event) {
                                 $('#x').val(event.detail.x);
                                 $('#y').val(event.detail.y);
                                 $('#width').val(event.detail.width);
                                 $('#height').val(event.detail.height);
-                            }
+                            },
+                            zoomable:false
                         });
                     }
                     fileReader.readAsDataURL(file);

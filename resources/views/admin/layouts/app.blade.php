@@ -9,6 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link href="{{asset('/img/logo.png')}}" rel="icon">
+
     <title>{{((isset($page)&&$page!=null)?($page.' - '):'').env('APP_NAME').((!isset($page)||$page==null)?' - Dashboard':'')}}</title>
 
     <!-- Custom fonts for this template-->

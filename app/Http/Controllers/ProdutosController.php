@@ -72,7 +72,7 @@ class ProdutosController extends Controller
                     $newData['status'] = 'Inativo';
                 }
                 $newData['title'] = $datatable->title;
-                $newData['price'] = "R$" . number_format($datatable->price, '2', ',', '.');
+                $newData['price'] = $datatable->current . number_format($datatable->price, '2', ',', '.');
                 $newData['image'] = '<img class="preview" src="' . env('APP_URL') . '/storage/' . $datatable->image . '">';
                 $newData['acoes'] = '<div class="acoes"><a class="edit bg-warning" href="' . route('admin.produtos.edit',
                         ['produtos' => $datatable->id_produto]) . '"><i class="fa fa-edit"></i></a><a data-csrf="' . csrf_token() . '" data-rota="' . route('admin.produtos.destroy',
@@ -101,16 +101,18 @@ class ProdutosController extends Controller
 
     public function store(Request $request)
     {
+
         $filename = 'img_' . $this->urlAmigavel($request->title) . '.' . $request->file('imagem')->extension();
         $path = public_path('storage/produtos/' . $filename);
         Image::make($request->file('imagem'))->crop(intval($request->width), intval($request->height),
-            intval($request->x), intval($request->y))->resize('310', '480')->save($path);
+            intval($request->x), intval($request->y))->resize('310', (310*intval($request->height))/intval($request->width))->save($path);
         $produto = new Produtos();
         $produto->title = $request->title;
         $produto->description = $request->description;
         $produto->price = floatval(str_replace(',', '.', $request->price));
         $produto->link = $request->link;
         $produto->status = $request->status;
+        $produto->current = $request->current;
         $produto->image = 'produtos/' . $filename;
         $produto->status_db = 1;
         $produto->save();
@@ -138,7 +140,7 @@ class ProdutosController extends Controller
             $filename = 'img_' . $this->urlAmigavel($request->title) . '.' . $request->file('imagem')->extension();
             $path = public_path('storage/produtos/' . $filename);
             Image::make($request->file('imagem'))->crop(intval($request->width), intval($request->height),
-                intval($request->x), intval($request->y))->resize('310', '480')->save($path);
+                intval($request->x), intval($request->y))->resize('310', (310*intval($request->height))/intval($request->width))->save($path);
             $produtos->image = 'produtos/' . $filename;
         }
         $produtos->title = $request->title;
