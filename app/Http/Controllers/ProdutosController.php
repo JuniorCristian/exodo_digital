@@ -148,6 +148,7 @@ class ProdutosController extends Controller
         $produtos->price = floatval(str_replace(',', '.', $request->price));
         $produtos->link = $request->link;
         $produtos->status = $request->status;
+        $produtos->current = $request->current;
 
         $produtos->save();
         return redirect()->route('admin.produtos.index');

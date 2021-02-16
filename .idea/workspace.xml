@@ -22,7 +22,6 @@
     <list default="true" id="e454cd8a-9468-470f-8633-b3320e1ca60f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProdutosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProdutosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/produtos/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/produtos/form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
