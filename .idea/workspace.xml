@@ -20,44 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e454cd8a-9468-470f-8633-b3320e1ca60f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_13_100149_edit_cursos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_16_181350_edit_produtos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CursosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CursosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProdutosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProdutosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/plugins/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/plugins/animate.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/plugins/cropper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/plugins/cropper.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/plugins/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/plugins/fontawesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/plugins/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/plugins/owl.carousel.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/plugins/quill.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/plugins/quill.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/plugins/sweetalert2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/plugins/sweetalert2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/sb-admin-2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/sb-admin-2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/cropper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/cropper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/datatables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/datatables.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/easing.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/easing.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/jquery.easing.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.easing.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/jquery.mask.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.mask.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/quill.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/quill.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/sweetalert2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/sweetalert2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/typed.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/typed.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugins/wow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins/wow.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/sb-admin-2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/sb-admin-2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/scss/bootstrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/bootstrap.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/cursos/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/cursos/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/produtos/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/produtos/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/produtos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/produtos/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/loja.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/loja.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

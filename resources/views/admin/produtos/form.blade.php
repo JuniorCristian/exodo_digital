@@ -5,7 +5,7 @@
     <div class="container-fluid">
         <h1 class="h3 mb-2 text-gray-800">{{$title}}</h1>
         <p class="mb-4"></p>
-        <form action="{{route($route, ['cursos'=>@$cursos->id_curso])}}" class="needs-validation" novalidate method="post"
+        <form action="{{route($route, ['produtos'=>@$produtos->id_produto])}}" class="needs-validation" novalidate method="post"
               enctype="multipart/form-data">
             @csrf
             @method($method)
@@ -22,7 +22,7 @@
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
                                         <labe for="title">Título</labe>
-                                        <input class="form-control form-text" value="{{@$cursos->title}}" required
+                                        <input class="form-control form-text" value="{{@$produtos->title}}" required
                                                id="title" name="title"
                                                placeholder="Insira o titulo do curso">
                                     </div>
@@ -33,14 +33,14 @@
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
                                         <labe for="link">Link externo</labe>
-                                        <input class="form-control form-text" value="{{@$cursos->link}}" id="link"
+                                        <input class="form-control form-text" value="{{@$produtos->link}}" id="link"
                                                name="link"
                                                placeholder="Insira o link do produto">
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-12">
                                     <div class="form-group">
-                                        <input type="hidden" id="description" value="{{@$cursos->description}}" required
+                                        <input type="hidden" id="description" value="{{@$produtos->description}}" required
                                                name="description">
                                         <labe for="description">Descrição</labe>
                                         <div>
@@ -58,13 +58,13 @@
                                         <div class="col-md-12 d-flex">
                                             <div class="col-md-3">
                                                 <select name="current" id="current" class="form-control form-text">
-                                                    <option {{(@$cursos->current=="R$"||(!isset($cursos->current)||$cursos->current=='')?"selected":"")}} value="R$">BRL</option>
-                                                    <option {{(@$cursos->current=="US$"?"selected":"")}} value="US$">USD</option>
-                                                    <option {{(@$cursos->current=="Kz"?"selected":"")}} value="Kz">AOA</option>
+                                                    <option {{(@$produtos->current=="R$"||(!isset($produtos->current)||$produtos->current=='')?"selected":"")}} value="R$">BRL</option>
+                                                    <option {{(@$produtos->current=="US$"?"selected":"")}} value="US$">USD</option>
+                                                    <option {{(@$produtos->current=="Kz"?"selected":"")}} value="Kz">AOA</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-9">
-                                                <input class="form-control form-text price" value="{{@$cursos->price}}" required
+                                                <input class="form-control form-text price" value="{{@$produtos->price}}" required
                                                        id="price" name="price"
                                                        placeholder="Insira o preço do produto">
                                             </div>
@@ -78,9 +78,9 @@
                                     <div class="form-group">
                                         <labe for="status">Status</labe>
                                         <select class="form-control form-text" id="status" required name="status">
-                                            <option {{!isset($cursos->status)?'selected':(@($cursos->status)?'selected ':'')}} value="1">Ativo
+                                            <option {{!isset($produtos->status)?'selected':(@($produtos->status)?'selected ':'')}} value="1">Ativo
                                             </option>
-                                            <option {{!isset($cursos->status)?'':(@(!$cursos->status)?'selected ':'')}} value="0">Inativo
+                                            <option {{!isset($produtos->status)?'':(@(!$produtos->status)?'selected ':'')}} value="0">Inativo
                                             </option>
                                         </select>
                                     </div>
@@ -92,7 +92,7 @@
                                         <input type="hidden" name="y" id="y">
                                         <input type="hidden" name="width" id="width">
                                         <input type="hidden" name="height" id="height">
-                                        <input type="file" class="form-control-file" {{isset($cursos->image)?'':'required '}}name="imagem" id="image">
+                                        <input type="file" class="form-control-file" {{isset($produtos->image)?'':'required '}}name="imagem" id="image">
                                     </div>
                                 </div>
                                 <div class="invalid-feedback">
@@ -103,8 +103,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-12" style="margin-bottom: 15px">
-                                    @if(isset($cursos->image))
-                                        <img class="imageCrop img-fluid" width="146px" src="{{env('APP_URL')}}/storage/{{@$cursos->image}}" alt="">
+                                    @if(isset($produtos->image))
+                                        <img class="imageCrop img-fluid" width="146px" src="{{env('APP_URL')}}/storage/{{@$produtos->image}}" alt="">
                                     @endif
                                 </div>
                                 <div class="col-md-12 col-lg-12">
@@ -192,8 +192,8 @@
             };
             var editor = new Quill('#container', options);
 
-            @if(isset($cursos->description))
-                $(".ql-editor").html('<?= @$cursos->description?>');
+            @if(isset($produtos->description))
+                $(".ql-editor").html('<?= @$produtos->description?>');
             @endif
 
             // Example starter JavaScript for disabling form submissions if there are invalid fields

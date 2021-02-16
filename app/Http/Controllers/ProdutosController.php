@@ -131,7 +131,7 @@ class ProdutosController extends Controller
         $route = 'admin.produtos.update';
         $title = 'Editar Produto';
 
-        return view('admin.produtos.form', compact('page', 'method', 'route', 'title', 'cursos'));
+        return view('admin.produtos.form', compact('page', 'method', 'route', 'title', 'produtos'));
     }
 
     public function update(Request $request, Produtos $produtos)
